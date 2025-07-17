@@ -1,0 +1,419 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.flexcontainer {
+    display: flex;
+    gap: 30px;
+    padding: 40px 20px;
+    justify-content: center;
+    flex-wrap: wrap;  
+}
+
+.item {
+    background-color: #fef3e7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex: 0 0 300px; 
+}   
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+
+.footer {
+    padding: 20px 10px;
+    background-color: #f8f4f0;
+    font-size: 13px;
+    color: #000000;
+    margin: 40px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;                
+    text-align: left;
+    gap: 20px;                    
+}
+
+.footer-column {
+    flex: 1;                      
+    min-width: 180px;             
+}
+
+.footer-column h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-column p {
+    margin: 4px 0;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
+    color: #6b4e2e;
+}
+
+
+.custom-navbar {
+    background-color: #deb887;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.nav-link {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.hero-image {
+    background-image: url('https://png.pngtree.com/background/20230613/original/pngtree-disney-world-park-teddy-bear-store-picture-image_3376066.jpg');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 56px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.btn-explore {
+    background-color: #c19a6b;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-explore:hover {
+    background-color: #a97454;
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .btn-explore {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+}
+
+
+
+body.register-page {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/911/438/large_2x/light-brown-texture-background-free-photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #fef3e7;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6b4e2e;
+    text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.3);
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.form-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-container button,
+.form-container a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #c19a6b;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover,
+.form-container a:hover {
+    background-color: #a97454;
+}
+
+.form-container a {
+    background-color: #999;
+}
+
+.form-container a:hover {
+    background-color: #777;
+}
+
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px 15px;
+    }
+
+    .form-container h2 {
+        font-size: 20px;
+    }
+
+    .form-container button,
+    .form-container a {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+body.teddies-page {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/911/438/large_2x/light-brown-texture-background-free-photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.teddy-header {
+    background-color: #f5deb3; 
+    color: #5c4033;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+
+body.contact-page {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/911/438/large_2x/light-brown-texture-background-free-photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.contact-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.contact-column h6 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #6b4e2e;
+}
+
+
+.contact-form-section {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    padding: 25px;
+    background-color: #fffaf0;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form h6 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #6b4e2e;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+}
+
+.contact-form textarea {
+    min-height: 100px;
+}
+
+
+.btn-submit {
+    background-color: #c19a6b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #a97454;
+}
+
+
+.footer {
+    padding: 20px 10px;
+    background-color: #f8f4f0;
+    font-size: 13px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-column h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-column p {
+    margin: 4px 0;
+}
+
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-column {
+        min-width: auto;
+    }
+
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        min-width: 100%;
+    }
+
+    .contact-form-section {
+        padding: 20px 15px;
+    }
+}
