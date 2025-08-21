@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header, footer {
+  background-color: #b3d9ff;
+  color: #003366;
+  text-align: center;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  min-height: 500px;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #e6f2ff;
+  padding: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  color: black;
+  margin: 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.todo-section {
+  flex: 1;
+  background-image: url('wG3a7f.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+.input-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+.input-section button {
+  padding: 0.5rem 1rem;
+  background-color: #3399ff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+#taskList li {
+  background-color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-actions button {
+  margin-left: 5px;
+  padding: 3px 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+.complete-btn {
+  background-color: green;
+  color: white;
+}
+
+.edit-btn {
+  background-color: orange;
+  color: white;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+}
+
+.counts {
+  margin-top: 10px;
+  color: #003366;
+}
+
+footer {
+  background-color: #b3d9ff;
+  color: #003366;
+  text-align: center;
+  padding: 1rem;
+  position: sticky;
+  bottom: 0;
+}
